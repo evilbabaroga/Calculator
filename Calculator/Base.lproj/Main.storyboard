@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6l0-ab-xlz">
-                                <rect key="frame" x="20" y="20" width="280" height="98"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="right" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="6l0-ab-xlz">
+                                <rect key="frame" x="20" y="20" width="440" height="82"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.55185395077720201" green="0.55185395077720201" blue="0.55185395077720201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -26,147 +26,195 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6t-t9-gdr">
-                                <rect key="frame" x="20" y="126" width="55" height="57"/>
+                                <rect key="frame" x="20" y="110" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="C"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Uj-yu-63L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8t-Vp-V8V">
-                                <rect key="frame" x="245" y="126" width="55" height="57"/>
+                                <rect key="frame" x="365" y="110" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="-"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3d3-iP-rR4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9k-Zn-BNu">
-                                <rect key="frame" x="95" y="126" width="55" height="57"/>
+                                <rect key="frame" x="135" y="110" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="÷"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUi-RI-KBY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uof-IO-1Wj">
-                                <rect key="frame" x="170" y="126" width="55" height="57"/>
+                                <rect key="frame" x="250" y="110" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="×"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ShF-oH-4xY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf4-3X-4RS">
-                                <rect key="frame" x="20" y="191" width="55" height="57"/>
+                                <rect key="frame" x="20" y="151" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="1"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSn-Oh-Dne"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca9-2N-030">
-                                <rect key="frame" x="95" y="191" width="55" height="57"/>
+                                <rect key="frame" x="135" y="151" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="2"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62M-Tc-XHU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3U-zl-F8k">
-                                <rect key="frame" x="170" y="191" width="55" height="57"/>
+                                <rect key="frame" x="250" y="151" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="3"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hI3-pR-gLm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by7-Fl-6Gk">
-                                <rect key="frame" x="20" y="256" width="55" height="57"/>
+                                <rect key="frame" x="20" y="192" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="4"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qu4-Xk-WLb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKw-xv-BHe">
-                                <rect key="frame" x="95" y="256" width="55" height="57"/>
+                                <rect key="frame" x="135" y="192" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="5"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpg-dp-ZyC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DA1-Xf-Meu">
-                                <rect key="frame" x="170" y="256" width="55" height="57"/>
+                                <rect key="frame" x="250" y="192" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="6"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNu-R9-AWo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nre-ux-zjV">
-                                <rect key="frame" x="20" y="321" width="55" height="57"/>
+                                <rect key="frame" x="20" y="233" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="7"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5w-tT-7sb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrK-e5-4TC">
-                                <rect key="frame" x="95" y="321" width="55" height="57"/>
+                                <rect key="frame" x="135" y="233" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="8"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AdC-1m-d3S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlQ-RW-8bL">
-                                <rect key="frame" x="170" y="321" width="55" height="57"/>
+                                <rect key="frame" x="250" y="233" width="95" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="9"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XzP-Th-V9w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7f-nM-INj">
-                                <rect key="frame" x="20" y="386" width="200" height="57"/>
+                                <rect key="frame" x="20" y="274" width="320" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="0"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pd6-cI-CuL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoJ-6w-ja5">
-                                <rect key="frame" x="245" y="191" width="55" height="122"/>
+                                <rect key="frame" x="365" y="151" width="95" height="74"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="+"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MiG-c0-N8X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brr-8h-1pz">
-                                <rect key="frame" x="245" y="321" width="55" height="122"/>
+                                <rect key="frame" x="365" y="233" width="95" height="74"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="=">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="pressedEquals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k9e-Vk-med"/>

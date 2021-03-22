@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         buttonClicked = false
         evaluated = false
         infix = []
+        print("initialized")
     }
     
     class Stack {
@@ -78,7 +79,7 @@ class ViewController: UIViewController {
             return toPrint
         }
     }
-
+    
     @IBAction func pressedClear(_ sender: Any) {
         clear()
         updateText()
